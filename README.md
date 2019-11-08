@@ -1,3 +1,5 @@
 # itc313-TP1
 
-creation de la classe date
+Creation de la classe Date
+Creation de la classe Client
+Creation de la classe Chambre

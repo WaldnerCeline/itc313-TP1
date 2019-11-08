@@ -1,13 +1,13 @@
 
 /** 
-  * File:     date.cpp 
+  * File:     Date.cpp 
   * Author:   WaldnerCeline
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 
   * Summary:  Definition of the class Date
   */
 
-#include "date.h"
+#include "Date.h"
 #include <iostream>
 
 Date::Date(int day, int month, int year){ //construteur

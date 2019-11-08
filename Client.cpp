@@ -1,4 +1,11 @@
-//Client.cpp
+/**
+* File :	Client.cpp
+* Author :	Nathan BRENIN  (NBrenin -> github)
+* Date :	Fall 2019
+* Course: 	C-C++ Programming / Esirem 3A Informatique Electronique
+* Summary :	Definition of the class Client
+*/
+
 #include <iostream>
 #include "Client.h"
 #include <string>
@@ -11,19 +18,19 @@ Client::Client(int id, std::string nom, std::string prenom, int nbReservation) {
 }
 
 
-int Client::getId() {
+int Client::getId() const {
 	return m_id;
 }
 
-std::string Client::getNom() {
+std::string Client::getNom() const {
 	return m_nom;
 }
 
-std::string Client::getPrenom() {
+std::string Client::getPrenom() const {
 	return m_prenom;
 }
 
-int Client::getNbReservation() {
+int Client::getNbReservation() const {
 	return m_nbReservation;
 }
 

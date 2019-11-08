@@ -1,11 +1,11 @@
 
 
 #include <iostream>
-#include "date.h"
+#include "Date.h"
 
 int main() {
 	Date noel(25, 12, 2019);
-	std::cout << " our = " << noel.getDay() << " mois = " << noel.getMonth() << " annee = " << noel.getYear() << std::endl;
+	std::cout << "jour = " << noel.getDay() << " mois = " << noel.getMonth() << " annee = " << noel.getYear() << std::endl;
 	noel.setYear(2020);
 	std::cout << " jour = " << noel.getDay() << " mois = " << noel.getMonth() << " nouvelle annee = " << noel.getYear() << std::endl;
 	noel.modifDate(10, 10, 2030);;

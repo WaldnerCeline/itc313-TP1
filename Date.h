@@ -1,5 +1,5 @@
 /** 
-  * File:     date.h 
+  * File:     Date.h 
   * Author:   WaldnerCeline
   * Date:     Fall 2019 
   * Course:   C-C++ Programming / Esirem 3A Informatique Electronique 

@@ -38,7 +38,7 @@ int Date::getDay(){
 }
 
 void Date::setDay(int day){
-	if(( day > 0) && ( day <= 12)) {
+	if(( day > 0) && ( day <= 31)) {
 		m_day = day;
 	}
 	else{

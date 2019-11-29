@@ -16,6 +16,9 @@ Date::Date(int day, int month, int year){ //construteur
 	m_year = year;
 }
 
+Date::Date() {
+}
+
 int Date::getMonth(){
 	return m_month;
 }

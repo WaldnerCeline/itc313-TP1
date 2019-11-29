@@ -15,6 +15,7 @@
 class Date {
 public:
 	Date(int day, int month, int year);
+	Date();
 	int getMonth();
 	int getDay();
 	int getYear();

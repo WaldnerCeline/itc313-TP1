@@ -62,5 +62,11 @@ std::string Hotel::toString() {
 	//Besoin de faire un cast int to string pour renvoyer un entier !
 	std::string renvoie;
 	renvoie =  "ID : "+ m_id + "\nNom : " + m_nom + "\nVille : " + m_ville + "\nnb Chambres : "+ std::to_string(m_nbChambre) + "\n";
+	
+	for(int i=0;i<m_nbChambre;i++)
+	{
+		renvoie+="\n"+m_listeChambre[i].toString();
+
+	}
     return renvoie;
 }

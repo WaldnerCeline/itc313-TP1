@@ -1,4 +1,3 @@
-
 /** 
   * File:     Date.cpp 
   * Author:   WaldnerCeline
@@ -62,8 +61,34 @@ void Date::setYear(int year){
 
 
 void Date::modifDate(int day, int month, int year){ //methode pour modifier la date, elle fait appel au setter
-	setDay(day);
+ 
 	setMonth(month);
 	setYear(year);
+        int dayMax = 0;
+	if(month == 1 || month == 3  || month == 5 || month == 7 || month == 8 || month == 9 || month == 31){
+	    dayMax = 31;	
+	}else
+	{
+		if(month == 4 || month == 6 || month == 9 || month == 11) {
+			dayMax = 30;	
+		}
+		else
+		{
+			//Calcule année bissextile
+			if((year%4==0 && year%100!=0)||year%400==0){
+				dayMax = 29;
+			}else {
+				dayMax = 28;
+			}
+		}
+	}
+	
+	if(day>dayMax)
+	{
+		std::cout<<"Erreur le jours "+std::to_string(day)+" n'est pas dans le mois de "+std::to_string(month)+" ! "<<std::endl;
+	} else
+	{
+		setDay(day);
+	}
 }
 

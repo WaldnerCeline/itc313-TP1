@@ -18,32 +18,38 @@
 
 
 Date entrez_date_debut(){
-	int a;
+	int day;
+	int month;
+	int year;
 	Date date_debut;
+	
 	std::cout << "entrez le jour de debut de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_debut.setDay(a);
+	std::cin >> day;
+
 	std::cout << "entrez le mois de debut de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_debut.setMonth(a);
+	std::cin >> month;
+
 	std::cout << "entrez l'année de debut de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_debut.setYear(a);
+	std::cin >> year;
+	date_debut.modifDate(day,month,year);
 	return date_debut;
 }
 
 Date entrez_date_fin(){
-	int a;
+	int day;
+	int month;
+	int year;
 	Date date_fin;
+	
 	std::cout << "entrez le jour de fin de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_fin.setDay(a);
+	std::cin >> day;
+	
 	std::cout << "entrez le mois de fin de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_fin.setMonth(a);
+	std::cin >> month;
+	
 	std::cout << "entrez l'année de fin de votre séjour"<<std::endl;
-	std::cin >> a;
-	date_fin.setYear(a);
+	std::cin >> year;
+	date_fin.modifDate(day,month,year);
 	return date_fin;
 
 }

@@ -1,1 +1,1 @@
-date.o: date.cpp date.h
+Date.o: Date.cpp Date.h
